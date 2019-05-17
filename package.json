@@ -1,0 +1,33 @@
+{
+  "name": "@eropple/nestjs-data-sec",
+  "version": "0.1.1",
+  "description": "Uses @nestjs/swagger annotations to ensure that controllers only return blessed objects as responses.",
+  "main": "dist",
+  "author": "Ed Ropple",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eropple/nestjs-data-sec"
+  },
+  "private": false,
+  "scripts": {
+    "build": "yarn exec tsc",
+    "prepare": "yarn build"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">=6.0.0",
+    "@nestjs/swagger": ">=3.0.2",
+    "rxjs": ">=6.4.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": ">=6.0.0",
+    "@nestjs/swagger": ">=3.0.2",
+    "rxjs": ">=6.4.0",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "@types/bunyan": "^1.8.6",
+    "bunyan-blackhole": "^1.1.1",
+    "reflect-metadata": "^0.1.13"
+  }
+}
