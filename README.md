@@ -1,6 +1,6 @@
 # @eropple/nestjs-data-sec #
 Even with the benefits of TypeScript's typing system, it's still very easy to
-write a controller hander, without thinking, that returns an object that contains
+write a controller handler, without thinking, that returns an object that contains
 data that shouldn't be sent over the wire. Sure, you're probably using Argon2
 or some other quality password hash, but you still shouldn't return that `User`
 object that contains it!
