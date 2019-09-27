@@ -11,7 +11,8 @@
   },
   "private": false,
   "scripts": {
-    "build": "yarn exec tsc",
+    "build": "yarn exec -- tsc",
+    "watch": "yarn build --watch",
     "prepare": "yarn build"
   },
   "peerDependencies": {

@@ -1,4 +1,6 @@
 # @eropple/nestjs-data-sec #
+[![npm version](https://badge.fury.io/js/%40eropple%2Fnestjs-data-sec.svg)](https://badge.fury.io/js/%40eropple%2Fnestjs-data-sec)
+
 Even with the benefits of TypeScript's typing system, it's still very easy to
 write a controller hander, without thinking, that returns an object that contains
 data that shouldn't be sent over the wire. Sure, you're probably using Argon2
@@ -115,5 +117,6 @@ function globalInterceptors(app: INestApplication) {
 - Decouple from `@nestjs/swagger`; provide own decorator for defining a response type
   (for users not using Swagger)
 - Decouple from NestJS HTTP; the same basic idea should be usable with websockets
+- Add support for returning arrays of objects
 - Bypass `data-sec` when streams are returned or when `@nestjs/swagger` operations are
   not returning `application/json`
